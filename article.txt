@@ -1,0 +1,221 @@
+
+  LET'S Make a PIE by using CSS
+
+  CSS 3 has 5 gradient functions; linear-gradient, repeating-linear-gradient, radial-gradient, repeating-radial-gradient and conical gradient.
+
+  Conical gradient is my favorite one, but I will explain one-by-one. In the end, I will make a pie using conical gradients. I hope it will be delicious.
+
+  Linear Gradient
+  It is what you may find if you search gradient. 
+
+
+
+  This makes all colors with the same interval.
+
+
+    background-image: linear-gradient(color-stop1, color-stop2, color-stop3, ...);
+    background-image: linear-gradient(red, yellow, blue, yellow);
+
+
+  Percentage and pixels can be used to define the position of colors. If the position of colors isn't defined, they will be distributed with equal intervals. If the position of colors is defined, they are shown with turquoise color. 
+
+    background-image: linear-gradient(color-stop1 x%, color-stop2 y%, color-stop3 zpx, ...);
+    background-image: linear-gradient(red 20%, yellow 70%, blue 250px, yellow);
+
+  If any gradient isn't wanted, this interval can be defined. For example, any gradient isn't wanted at an interval between 50% and 70%.
+
+
+    background-image: linear-gradient(red 20%, yellow 50%, yellow 70%, blue 250px, yellow);
+    background-image: linear-gradient(red 20%, yellow 50% 70%, blue 250px, yellow);
+
+  Also, two colors can be used without any gradient between them.
+
+    background-image: linear-gradient(red 20% yellow 70%, blue 70%, yellow);
+
+
+  Given values must be in increasing order. If not, colors will be placed in the same place. For example, if 70% is greater than 100px, blue will be placed at 70%.
+
+
+    background-image: linear-gradient(red 20%, yellow 70%, blue 100px, yellow);
+
+  The direction of the gradient can be defined. left, right, top, bottom can be used to define the direction of the gradient. It is bottom as default.
+
+
+    background-image: linear-gradient(direction, color-stop1 X%, color-stop2 Y%, color-stop3 Zpx, ...);
+    background-image: linear-gradient(to top, red 20%, yellow 40%, blue 250px);
+
+  Also, their combination can be used.
+
+    background-image: linear-gradient(to top left, red 20%, yellow 70%, blue 250px);
+
+  If you use the combination of them, the gradient will be placed diagonally.
+
+  As you can see, colors are changing diagonally. Maybe, you may ask 80% of what or 250px from what. The next drawing shows how to use percentages or pixels. 0% or 0px define the starting point and 100% or length of red line define the ending point.
+
+  Repeating Linear Gradient
+  Its name is very descriptive. How is it repeating?
+
+    background-image: repeating-linear-gradient(color-stop1, color-stop2, color-stop3, ...);
+    background-image: repeating-linear-gradient(red, yellow, blue);
+
+  As you can see, there is no difference between repeating linear gradient and linear gradient. Why? Because there is no defining point to repeat. For the last color or the first color, one value must be defined.
+
+
+    background-image: repeating-linear-gradient(color-stop1, color-stop2, color-stop3 position of last color, );
+    background-image: repeating-linear-gradient(red, yellow, blue 90px);
+
+  Now, it will repeat one time for each 90px. Also, the percentage can be defined.
+
+    background-image: repeating-linear-gradient(red, yellow, blue 40%);
+
+  More, if you want, you may define the starting point. If it is defined, the interval before this point will be filled.
+
+    background-image: repeating-linear-gradient(red 10%, yellow, blue 40%);
+
+  Again, the direction can be used.
+
+    background-image: repeating-linear-gradient(to left top, red, yellow, blue 40%);
+
+  The previous schema is valid for repeating-linear-gradient.
+
+
+
+  Radial Gradient
+  Radial gradient provides a transition between colors that radiate from an origin.
+
+    background-image: radial-gradient(color-stop1, color-stop2, color-stop3, ...);
+    background-image: radial-gradient(red, yellow, blue);
+
+  Similar to linear gradient, percentages and px can be used for colors.
+
+    background-image: radial-gradient(red 20%, yellow 40%, blue 250px, yellow);
+
+  What is the problem? 250px used for the location of blue color, but the result is unexpected. Let me introduce two different shapes for radial gradient: circle and ellipse. If it isn't defined, ellipse is default one. So, firstly let's check how to use circle. Circle is a bit easier than ellipse.
+
+    background-image: radial-gradient(circle, red 20%, yellow 40%, blue 250px, yellow);
+
+  Again, there is a problem, 20% of what? If wanted, this value can be defined directly with a pixel value.
+
+    background-image: radial-gradient(circle 75px, red 20%, yellow 40%, blue 100%, yellow);
+
+ Now, reference length is 75px. %20 means 75px*20%= 15px.
+
+  Any of closest-side, closest-corner, farthest-side and farthest-corner keywords can be used to define radius. If it isn't defined, farthest-corner is the default. So, 100% means the length of the reference length.
+
+    background-image: radial-gradient(circle closest-side, red 20%, yellow 40%, blue 100%, yellow);
+
+  Schema shows these keywords.
+
+
+  More, the position of the center of the radial gradient can be defined with 'at'. The first value is for x position, and the second value is for y position of center. Also, center keyword can be used for both values. If they aren't defined, 'center' is the default one.
+
+
+    background-image: radial-gradient(circle closest-side at 100px center, red 20%, yellow 40%, blue 100%, yellow);
+
+  Let's continue with ellipse.
+
+    background-image: radial-gradient(ellipse closest-side at 100px 150px, red 20%, yellow 40%, blue 100%, yellow);
+
+  As you can see, two different values are used for x and y-axis as radius.
+  But, what happens if any pixel value is used for the position of colors.
+
+    background-image: radial-gradient(ellipse closest-side at 100px 150px, red 20%, yellow 75px, blue 100%, yellow);
+
+  I searched about that but I couldn't find how it is calculated. I found some answers by trial and error. My experience says that ellipse is using x-direction(along width) as a reference axis. For example, the nearest sides are 100px away from center for x-direction and 150px for y-direction. If you want to use 75px as the position of color, it will be transformed to the percentage by using x-direction length. As a result, 75px/100px will be 75% and this new percentage will be used, 75%*150px=112.5px, for y-direction. This is a bit of detail. Let me know if I made a wrong conclusion, please.
+
+  There is one more detail about farthest-corner, but I am skipping it because it will be more detailed.
+
+  Repeating Radial Gradient
+  This is similar to radial gradient.
+
+    background-image: repeating-radial-gradient(color-stop1, color-stop2, color-stop3, ...);
+    background-image: repeating-radial-gradient(red, yellow, blue);
+
+  Again, there is no difference between repeating radial gradient and radial gradient if you don't define the repeating interval. Let's say it is 100px. 
+
+    background-image: repeating-radial-gradient(red, yellow, blue 100px);
+
+  Similar to repeating-linear-gradient, you may define the starting point.
+
+    background-image: repeating-radial-gradient(red 20px, yellow, blue 100px);
+
+  Now, it will repeat one time for each 80px by starting 20px, and the interval before 20px will be filled automatically.
+
+  As I said before, farthest corner is the default one. Let me explain how to use 100px. Similar to nearest-side, the distance between center and corner along x and y-axis are found, and distance along x is used as a reference. Firstly, 100px/distance along x-axis is calculated. Then, the found value is multiplied by the value of distance along the y-axis.
+
+  I am not explaining repeating radial gradient so much, because other properties are the same with radial gradient.
+
+  Conic Gradient
+
+  I am trying to use it for the first time. So, this article is beneficial to me. I hope it will be beneficial for you, too.
+
+
+    background-image: conic-gradient(color-stop1, color-stop2, color-stop3, ...);
+    background-image: conic-gradient(red, yellow, blue);
+
+  As you can see, colors are changing around a point. 
+
+  Now, can you use a pixel to define the position of colors? No. So, what do you use for it? Percentages and any angle(rad, grad, deg, turn,) can be used.
+
+
+    background-image: conic-gradient(color-stop1, color-stop2 xdeg, color-stop3 y%, ...);
+    background-image: conic-gradient(red .25turn, yellow 120deg, blue 50%, magenta 5rad, orange 400grad);
+
+
+  More, the position of the center can be changed. top, bottom, left, right and center keywords or pixels or percentages can be used with 'at'.
+
+
+    background-image: conic-gradient(at 100px top, red .25turn, yellow 120deg, blue 90%);
+    background-image: conic-gradient(at left 25%, red .25turn, yellow 120deg, blue 90%);
+    background-image: conic-gradient(at left top, red .25turn, yellow 120deg, blue 90%);
+
+
+  As you notice, they start from the same point. Can you change it? Yes.
+
+
+    background-image: conic-gradient(from 90deg, red .25turn, yellow 120deg, blue 90%);
+
+  So, 90deg is the new starting point.
+
+  Repeating Conic Gradient
+  It is similar to conic gradient but interval must be defined with the last color, the first color, or both.
+
+    background-image: repeating-conic-gradient(red 90deg, yellow 270deg, blue .9turn);
+
+  Other properties used for conic gradient can be used for repeating conic gradient.
+
+    background-image: repeating-conic-gradient(from 45deg at 50px center, red 90deg, yellow 270deg, blue .9turn);
+
+  Before pie, I want to give some information about how to use a gradient for borders
+
+  Gradient For Borders
+  You may use any gradient for borders.
+
+    border: 75px solid;
+    border-image: repeating-conic-gradient(from 45deg at 50px center, red 90deg, yellow 270deg, blue .9turn);
+    border-image-slice: 75;
+
+  Solid doesn't make any difference, but if you don't define any property it won't work. The important point is the value of width of the border must be same as the value of border-image-slice. If they will be different values, it causes some distortion. So, the same values work very well. 
+
+
+  Gradient For Texts
+
+  All gradients can be used for texts.
+
+
+    background-image: repeating-conic-gradient(from 45deg at 50px center, red 90deg, yellow 270deg, blue 0.9turn);
+    color: transparent;
+    -webkit- background-clip: text;
+    background-clip: text;
+
+
+  FINAL: PIE 
+  I said that I will do a pie, then I gave a lot of information about gradients. But, my pie is very basic.
+  Bon appétit!
+
+  I hope you will like it. If I have any mistake, let me know it, please... I will share all codes at https://github.com/ozovalihasan/gradient-Pie
+
+
+
+
+

@@ -1,0 +1,243 @@
+main > div {
+  margin-top: 30px;
+}
+
+img {
+  height: 300px;
+  width: 700px;
+}
+
+.container1 .img {
+  background-image: linear-gradient(red, yellow, blue, yellow);
+}
+
+.container2 .img {
+  background-image: linear-gradient(red 20%, yellow 70%, blue 250px, yellow);
+  position: relative;
+}
+.container2 .line {
+  width: 850px;
+  height: 1px;
+  position: absolute;
+  color: black;
+  border: turquoise 1px;
+  border-style: dashed;
+}
+.container2 .line1 {
+  top: 20%;
+}
+.container2 .line2 {
+  top: 70%;
+}
+.container2 .line3 {
+  top: 250px;
+}
+
+.container2-a .img {
+  background-image: linear-gradient(red 20%, yellow 50%, yellow 70%, blue 250px, yellow);
+  position: relative;
+}
+.container2-a .line {
+  width: 850px;
+  height: 1px;
+  position: absolute;
+  color: black;
+  border: turquoise 1px;
+  border-style: dashed;
+}
+.container2-a .line1 {
+  top: 20%;
+}
+.container2-a .line2-a {
+  top: 50%;
+}
+.container2-a .line2 {
+  top: 70%;
+}
+.container2-a .line3 {
+  top: 250px;
+}
+
+.container2-b .img {
+  background-image: linear-gradient(red 20%, yellow 70%, blue 70%, yellow);
+  position: relative;
+}
+.container2-b .line {
+  width: 850px;
+  height: 1px;
+  position: absolute;
+  color: black;
+  border: turquoise 1px;
+  border-style: dashed;
+}
+.container2-b .line1 {
+  top: 20%;
+}
+.container2-b .line2 {
+  top: 70%;
+}
+
+.container3 .img {
+  background-image: linear-gradient(red 20%, yellow 70%, turquoise 70%, turquoise 70.2%, yellow 70.2%, blue 100px, yellow), linear-gradient(transparent 70%, turquoise 70%, turquoise 70.2%, transparent 70.2%, transparent 80%, turquoise 80%, turquoise 80.2%, transparent 80.2%);
+}
+
+.container4 .img {
+  background-image: linear-gradient(to top left, yellow 20%, turquoise 20% 20.2%, yellow 20.2%, red 40%, turquoise 40.2% 40.2%, red 40.2%, blue 250px, turquoise 250px 251px, blue 251px);
+}
+
+.container5 .img {
+  background-image: repeating-linear-gradient(red, yellow, blue);
+}
+
+.container5-a .img {
+  background-image: repeating-linear-gradient(red, yellow, blue 90px, turquoise 90px 91px, blue 91px);
+}
+
+.container6 .img {
+  background-image: repeating-linear-gradient(red, yellow, blue 40%, turquoise 40% 40.5%, blue 40.5%);
+}
+
+.container6-a .img {
+  background-image: repeating-linear-gradient(red 10%, turquoise 10% 10.5%, red 10.5%, yellow, blue 40%, turquoise 40% 40.5%, blue 40.5%);
+}
+
+.container7 .img {
+  background-image: repeating-linear-gradient(to left top, red, yellow, blue 40%, turquoise 40% 40.2%, blue 40.2%);
+}
+
+.container9 .img {
+  background-image: radial-gradient(red, yellow, blue);
+}
+
+.container10 .img {
+  background-image: radial-gradient(red 20%, turquoise 20% 20.2%, red 20.2%, yellow 40%, turquoise 40% 40.2%, yellow 40.2%, blue 250px, turquoise 250px 251px, blue 251px, yellow);
+}
+
+.container11 .img {
+  background-image: radial-gradient(circle, red 20%, turquoise 20% 20.2%, red 20.2%, yellow 40%, turquoise 40% 40.2%, yellow 40.2%, blue 250px, turquoise 250px 251px, blue 251px, yellow);
+}
+
+.container12 .img {
+  background-image: radial-gradient(circle 75px, red 20%, turquoise 20% 21%, red 21%, yellow 40%, turquoise 40% 41%, yellow 41%, blue 99%, turquoise 99% 100%, blue 100%, yellow);
+}
+
+.container13 .img {
+  background-image: radial-gradient(circle closest-side, red 20%, turquoise 20% 21%, red 21%, yellow 40%, turquoise 40% 41%, yellow 41%, blue 99%, turquoise 99% 100%, blue 100%, yellow);
+}
+
+.container14 .img {
+  background-image: radial-gradient(circle closest-side at 100px center, red 20%, turquoise 20% 21%, red 21%, yellow 40%, turquoise 40% 41%, yellow 41%, blue 99%, turquoise 99% 100%, blue 100%, yellow);
+}
+
+.container15 .img {
+  background-image: radial-gradient(ellipse closest-side at 100px center, red 20%, turquoise 20% 21%, red 21%, yellow 40%, turquoise 40% 41%, yellow 41%, blue 99%, turquoise 99% 100%, blue 100%, yellow);
+}
+
+.container16 .img {
+  background-image: radial-gradient(ellipse closest-side at 100px 150px, red 20%, turquoise 20% 21%, red 21%, yellow 75px, turquoise 75px 76px, yellow 76px, blue 99%, turquoise 99% 100%, blue 100%, yellow);
+}
+.container16 .line1 {
+  width: 850px;
+  height: 1px;
+  position: absolute;
+  color: black;
+  border: turquoise 1px;
+  border-style: dashed;
+  top: 37px;
+}
+.container16 .line2 {
+  width: 1px;
+  height: 300px;
+  position: absolute;
+  color: #fe0000;
+  border: turquoise 1px;
+  border-style: dashed;
+  top: 0px;
+  left: 25px;
+}
+.container16 .line3 {
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  color: black;
+  border: turquoise 1px;
+  border-style: dashed;
+  top: 150px;
+  left: 100px;
+}
+
+.container18 .img {
+  background-image: repeating-radial-gradient(red, yellow, blue);
+}
+
+.container19 .img {
+  background-image: repeating-radial-gradient(red, yellow, blue 100px, turquoise 100px 101px, blue 101px);
+}
+
+.container19-a .img {
+  background-image: repeating-radial-gradient(red 20px, turquoise 20px 21px, red 21px, yellow, blue 100px, turquoise 100px 101px, blue 101px);
+}
+
+.container20 .img {
+  background-image: conic-gradient(red, yellow, blue);
+}
+
+.container21 .img {
+  background-image: conic-gradient(red 0.25turn, turquoise 0.25turn 0.252turn, red 0.252turn, yellow 120deg, turquoise 120deg 121deg, yellow 121deg, blue 50%, turquoise 50% 50.5%, blue 50.5%, magenta 5rad, turquoise 5rad 5.01rad, magenta 5.01rad, orange 400grad, turquoise 400grad 401grad, orange 401grad);
+}
+
+.container22 .img {
+  background-image: conic-gradient(at 100px top, red 0.25turn, turquoise 0.25turn 0.252turn, red 0.252turn, yellow 120deg, turquoise 120deg 120.3deg, yellow 120.3deg, blue 90%, turquoise 90% 91%, blue 91%);
+}
+
+.container23 .img {
+  background-image: conic-gradient(at left 25%, red 0.25turn, turquoise 0.25turn 0.252turn, red 0.252turn, yellow 120deg, turquoise 120deg 120.3deg, yellow 120.3deg, blue 90%, turquoise 90% 91%, blue 91%);
+}
+
+.container24 .img {
+  background-image: conic-gradient(at left top, red 0.25turn, turquoise 0.25turn 0.252turn, red 0.252turn, yellow 120deg, turquoise 120deg 120.3deg, yellow 120.3deg, blue 90%, turquoise 90% 91%, blue 91%);
+}
+
+.container25 .img {
+  background-image: conic-gradient(from 90deg, red 0.25turn, turquoise 0.25turn 0.252turn, red 0.252turn, yellow 120deg, turquoise 120deg 120.3deg, yellow 120.3deg, blue 90%, turquoise 90% 91%, blue 91%);
+}
+
+.container26 .img {
+  background-image: repeating-conic-gradient(red 90deg, turquoise 90deg 90.05deg, red 90.05deg, yellow 270deg, turquoise 270deg 271deg, yellow 271deg, blue 0.9turn, turquoise 0.9turn 0.91turn, blue 0.91turn);
+}
+
+.container27 .img {
+  background-image: repeating-conic-gradient(from 45deg at 50px center, red 90deg, turquoise 90deg 90.05deg, red 90.05deg, yellow 270deg, turquoise 270deg 271deg, yellow 271deg, blue 0.9turn, turquoise 0.9turn 0.91turn, blue 0.91turn);
+}
+
+.container28 .img {
+  border: 75px solid;
+  border-image: repeating-conic-gradient(from 45deg at 50px center, red 90deg, yellow 270deg, blue 0.9turn);
+  border-image-slice: 75;
+}
+
+.container28-a h1 {
+  height: 300px;
+  width: 700px;
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+  background-image: repeating-conic-gradient(from 45deg at 50px center, red 90deg, yellow 270deg, blue 0.9turn);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.container29 .img {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(transparent 0 125px, black 125px 126px, brown 126px), radial-gradient(blue 0 1px, magenta 1px 2px, orange 2px 4px, transparent 4px), repeating-conic-gradient(red 0 60deg, #9900ff 60deg 120deg, #ffd000 120deg 180deg);
+  background-size: auto, 30px 30px, auto;
+  background-repeat: repeat;
+  border-radius: 50%;
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
