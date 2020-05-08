@@ -1,6 +1,8 @@
-# gradient-Pie
+﻿# gradient-Pie
 
-This repo is created to show how gradients are used. It has html and css codes. So I f you want, you may check this codes
+This repo is created to show how gradients are used. It has HTML and CSS codes. So If you want, you may check this codes. More, you may check  [the article](https://medium.com/@ozovalihasan/lets-make-a-pie-by-using-css-gradients-d1bca3ed88bd)
+
+
 
 ## Built With
 
