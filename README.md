@@ -2,26 +2,19 @@
 
 This repo is created to show how gradients are used. It has html and css codes. So I f you want, you may check this codes
 
-
 ## Built With
 
 - Html
 - CSS ( SCSS )
 - Bootstrap
 
- 
-
 ## Live Demo
 
 [Live Demo Link](https://rawcdn.githack.com/ozovalihasan/gradient-Pie/5a47085a6dba0258010a285242b287def357fc36/index.html)
 
-
-
 ## Getting Started
 
 **Click on the link above in order to see the Live Demo of the front end project.**
-
-
 
 To get a local copy up and running follow these simple example steps:
 
@@ -39,17 +32,16 @@ To get a local copy up and running follow these simple example steps:
 - Run `git clone git@github.com:ozovalihasan/capstoneHtmlCss.git`
 - Open index.html with double-click
 
-
 ## Authors
 
-?? **Hasan �zoval�**
+👤 **Hasan Özovalı**
 
 - Github: [@ozovalihasan](https://github.com/ozovalihasan)
 - Twitter: [@ozovalihasan](https://twitter.com/ozovalihasan)
-- Linkedin: [Hasan �zoval�](https://www.linkedin.com/in/hasan-ozovali/)
+- Linkedin: [Hasan Özovalı](https://www.linkedin.com/in/hasan-ozovali/)
 - Mail: [ozovalihasan@gmail.com](ozovalihasan@gmail.com)
 
-## ?? Contributing
+## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
@@ -57,9 +49,8 @@ Feel free to check the [issues page](issues/).
 
 ## Show your support
 
-Give a ?? if you like this project!
+Give a ⭐️ if you like this project!
 
-
-## ?? License
+## 📝 License
 
 This project is [MIT](lic.url) licensed.
